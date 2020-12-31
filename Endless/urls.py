@@ -3,8 +3,8 @@ from Endless.views import (SignUp, PostListView, HelloDjango, PostDetailView,
 PostCreateView, PostUpdateView, PostDeleteView, addLike, addComment, ExploreView, toggleFollow, UserProfile, EditProfile
 )
 urlpatterns = [
-    path('', HelloDjango.as_view(), name = 'hello'),
-    path('posts/', PostListView.as_view(), name = 'posts'),
+    # path('', HelloDjango.as_view(), name = 'hello'),
+    path('', PostListView.as_view(), name = 'posts'),
     path('post/<int:pk>/', PostDetailView.as_view(), name = 'post_detail'),
     path('post/new/', PostCreateView.as_view(), name = 'make_post'),
     path('post/update/<int:pk>', PostUpdateView.as_view(), name = 'edit_post'),
