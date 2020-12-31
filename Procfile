@@ -1,0 +1,1 @@
+web: gunicorn endless_lists.wsgi:application --log-file - --log-level debug
